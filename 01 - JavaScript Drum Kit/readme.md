@@ -4,6 +4,7 @@
 
 #### 大致方向 : 這篇主要練習的是利用`鍵盤觸發`，然後`播放聲音及改變CSS`，最後`CSS恢復原樣`
 
+
 1.鍵盤觸發 : 
 ```
   window.addEventListener('keydown', playHandler);
@@ -11,6 +12,7 @@
 現在所在的頁面監聽`keydown`鍵盤按下這個事件，有事件發生時就觸發`playHandler`function。
 
 [EventTarget.addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+
 
 2.播放聲音及改變CSS : 
 
@@ -21,6 +23,7 @@
 [HTMLMediaElement.play()](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/play)
 
 [Element.classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
+
 
 3.CSS恢復原樣 :
 
