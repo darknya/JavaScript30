@@ -12,6 +12,7 @@
 現在所在的頁面監聽`keydown`鍵盤按下這個事件，有事件發生時就觸發`playHandler`function。
 
 [EventTarget.addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+
 <br>
 
 2.播放聲音及改變CSS : 
@@ -23,6 +24,7 @@
 [HTMLMediaElement.play()](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/play)
 
 [Element.classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
+
 <br>
 
 3.CSS恢復原樣 :
@@ -43,6 +45,7 @@ document.querySelectorAll('.key').forEach(key => {
 [Event.currentTarget](https://developer.mozilla.org/en-US/docs/Web/API/Event/currentTarget)
 
 這裡補充 `document.querySelectorAll('.key')` 抓到的結果並不是 `Array` 而是 [NodeList](https://developer.mozilla.org/zh-TW/docs/Web/API/NodeList)
+
 <br>
 
 後記 : 當按鍵按著不放時會有"playing"不會被移除掉的BUG，等之後有空再回頭來處裡吧...
