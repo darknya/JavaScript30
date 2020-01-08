@@ -3,6 +3,7 @@
 ### 說明&摘要
 
 #### 大致方向 : 這篇主要練習的是利用`鍵盤觸發`，然後`撥放聲音`及`顯示CSS`
+
 1.鍵盤觸發 : 
 ```
   window.addEventListener('keydown', playHandler);
