@@ -25,9 +25,8 @@
 3.CSS恢復原樣 :
 
 這裡是要撥放完CSS動畫之後才把class拿掉，所以用`document.querySelectorAll('.key').forEach()`
-```
+
 這裡補充 `document.querySelectorAll('.key')` 抓到的結果並不是 `Array` 而是 [NodeList](https://developer.mozilla.org/zh-TW/docs/Web/API/NodeList)
-```
 
 [Event.currentTarget](https://developer.mozilla.org/en-US/docs/Web/API/Event/currentTarget)
 
