@@ -48,4 +48,8 @@ document.querySelectorAll('.key').forEach(key => {
 
 <br>
 
+最後DEMO連結 : [Demo](https://darknya.github.io/JavaScript30/01%20-%20JavaScript%20Drum%20Kit/index-START.html)
+
+<br>
+
 後記 : 當按鍵按著不放時會有"playing"不會被移除掉的BUG，等之後有空再回頭來處裡吧...
