@@ -18,4 +18,4 @@
 [Array.prototype.splice()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
 
 
-[DEMO](https://darknya.github.io/JavaScript30/04%20-%20Array%20Cardio%20Day%202/index-START.html)
+[DEMO](https://darknya.github.io/JavaScript30/07%20-%20Array%20Cardio%20Day%202/index-START.html)
