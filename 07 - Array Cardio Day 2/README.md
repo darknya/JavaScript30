@@ -3,6 +3,7 @@
 ### 說明&摘要
 
 這篇也是做一些 JavaScipt Array 的基本操作
+
 我把這篇有用到的 MDN 頁面連結列在下面
 
 [Array.prototype.some()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
