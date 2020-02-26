@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Console Tricks!</title>
+</head>
+<body>
+
+  <p onClick="makeGreen()">×BREAK×DOWN×</p>
+
+  <script>
+    const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
+
+    function makeGreen() {
+      const p = document.querySelector('p');
+      p.style.color = '#BADA55';
+      p.style.fontSize = '50px';
+    }
+
+    let console = {
+      isDev : true,
+      log(...args) {
+        if(!this.isDev) return;
+        window.console.log(...args);
+      },
+      warn(...args) {
+        if(!this.isDev) return;
+        window.console.warn(...args);
+      },
+      error(...args) {
+        if(!this.isDev) return;
+        window.console.error(...args);
+      },
+      info(...args) {
+        if(!this.isDev) return;
+        window.console.info(...args);
+      },
+      assert(...args) {
+        if(!this.isDev) return;
+        window.console.assert(...args);
+      },
+      dir(...args) {
+        if(!this.isDev) return;
+        window.console.dir(...args);
+      },
+      table(...args) {
+        if(!this.isDev) return;
+        window.console.table(...args);
+      },
+      count(...args) {
+        if(!this.isDev) return;
+        window.console.count(...args);
+      },
+      time(...args) {
+        if(!this.isDev) return;
+        window.console.time(...args);
+      },
+      timeEnd(...args) {
+        if(!this.isDev) return;
+        window.console.timeEnd(...args);
+      },
+    }
+
+    // Regular
+    console.log("1", 1, [1,2,3], {a:1});
+
+    // Interpolated
+    // 這讓我想起以前初學 C/C++ 常用的 print
+    let str = "String";
+    console.log("this is a %s", str);
+    console.log("this is a %f Float", 3.1415);
+    console.log("this is a %d Integer", 3.1415);
+
+    console.log(`this is a ${str}`);
+
+    // Styled
+    console.log("style test %cstyle test", "font-size:20px; color:green; background:red;")
+
+    // warning!
+    console.warn("這是警告");
+
+    // Error :|
+    console.error("這是錯誤");
+
+    // Info
+    console.info("在 Chrome 好像看不出效果");
+
+    // Testing
+    console.assert(false, "前面的條件是 false 才會顯示這段訊息");
+    console.assert(0, "前面的條件是 false 才會顯示這段訊息");
+    console.assert(NaN, "前面的條件是 false 才會顯示這段訊息");
+    console.assert(undefined, "前面的條件是 false 才會顯示這段訊息");
+    console.assert(null, "前面的條件是 false 才會顯示這段訊息");
+
+    // clearing
+    window.console.clear();
+    // Ctrl+L 或 滑鼠右鍵 Clear console
+
+    // Viewing DOM Elements
+    const p = document.querySelector('p');
+    console.log(p);
+    console.dir(p);
+    window.console.dir(console);
+    // 可查看該對象的屬性與功能
+
+    // Grouping together
+    // 原作者是想教我們使用 console.group()
+    console.table(dogs);
+
+    // counting
+    // 簡單來講就是計算該對象出現幾次的計數器
+    console.count('Wes');
+    console.count('Wes');
+    console.count('Steve');
+    console.count('Steve');
+    console.count('Wes');
+    console.count('Steve');
+    console.count('Wes');
+    console.count('Steve');
+    console.count('Steve');
+    console.count('Steve');
+    console.count('Steve');
+    console.count('Steve');
+
+    // timing
+    // 可計算某段程式執行所需的時間並顯示
+    console.time('time test');
+    let arr = [];
+    for(let i = 0; i < 100000; i++) {
+      arr.push(i);
+    }
+    console.timeEnd('time test');
+
+  </script>
+</body>
+</html>
